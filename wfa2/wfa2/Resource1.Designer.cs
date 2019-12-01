@@ -77,5 +77,14 @@ namespace wfa2 {
                 return ResourceManager.GetString("FullName", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to fájlba írás.
+        /// </summary>
+        internal static string write {
+            get {
+                return ResourceManager.GetString("write", resourceCulture);
+            }
+        }
     }
 }

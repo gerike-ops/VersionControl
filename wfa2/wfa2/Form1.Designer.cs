@@ -32,6 +32,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.writebtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblLastName
@@ -69,11 +70,22 @@
             this.listBox1.Size = new System.Drawing.Size(328, 356);
             this.listBox1.TabIndex = 5;
             // 
+            // writebtn
+            // 
+            this.writebtn.Location = new System.Drawing.Point(508, 243);
+            this.writebtn.Name = "writebtn";
+            this.writebtn.Size = new System.Drawing.Size(209, 33);
+            this.writebtn.TabIndex = 6;
+            this.writebtn.Text = "button1";
+            this.writebtn.UseVisualStyleBackColor = true;
+            this.writebtn.Click += new System.EventHandler(this.Writebtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.writebtn);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.textBox1);
@@ -92,6 +104,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button writebtn;
     }
 }
 
