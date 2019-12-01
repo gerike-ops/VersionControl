@@ -33,6 +33,7 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.writebtn = new System.Windows.Forms.Button();
+            this.delete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblLastName
@@ -80,11 +81,22 @@
             this.writebtn.UseVisualStyleBackColor = true;
             this.writebtn.Click += new System.EventHandler(this.Writebtn_Click);
             // 
+            // delete
+            // 
+            this.delete.Location = new System.Drawing.Point(508, 322);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(75, 23);
+            this.delete.TabIndex = 7;
+            this.delete.Text = "button1";
+            this.delete.UseVisualStyleBackColor = true;
+            this.delete.Click += new System.EventHandler(this.Delete_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.delete);
             this.Controls.Add(this.writebtn);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnAdd);
@@ -105,6 +117,7 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button writebtn;
+        private System.Windows.Forms.Button delete;
     }
 }
 

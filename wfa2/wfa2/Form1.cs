@@ -19,11 +19,16 @@ namespace wfa2
         public Form1()
         {
             InitializeComponent();
-            lblLastName.Text = Resource1.FullName; 
-            
+            lblLastName.Text = Resource1.FullName;
+
             btnAdd.Text = Resource1.Add;
             writebtn.Text = Resource1.write;
 
+            Listázás();
+        }
+
+        private void Listázás()
+        {
             listBox1.DataSource = users;
             listBox1.ValueMember = "ID";
             listBox1.DisplayMember = "FullName";
@@ -66,6 +71,14 @@ namespace wfa2
                     sw.WriteLine();
                 }
             }
+        }
+
+        private void Delete_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex == null) return;
+            usher törlendő = (usher)listBox1.SelectedItem;
+            users.Remove(törlendő);
+            Listázás();
         }
     }
 }
