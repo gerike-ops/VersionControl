@@ -18,8 +18,8 @@ namespace wfa2
         public Form1()
         {
             InitializeComponent();
-            lblLastName.Text = Resource1.LastName; 
-            lblFirstName.Text = Resource1.FirstName; 
+            lblLastName.Text = Resource1.FullName; 
+            
             btnAdd.Text = Resource1.Add;
 
             listBox1.DataSource = users;
@@ -30,10 +30,15 @@ namespace wfa2
         private void BtnAdd_Click(object sender, EventArgs e)
         {
             var u = new usher();
-            u.LastName = textBox1.Text;
-            u.FirstName = textBox2.Text;
+            u.FullName = textBox1.Text;
+           
 
             users.Add(u);
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }
